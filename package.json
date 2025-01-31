@@ -1,0 +1,14 @@
+{
+  "name": "digital-ocean-flows",
+  "module": "index.ts",
+  "type": "module",
+  "devDependencies": {
+    "@types/bun": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  },
+  "dependencies": {
+    "dots-wrapper": "^3.11.14"
+  }
+}
