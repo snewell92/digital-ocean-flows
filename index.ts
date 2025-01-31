@@ -89,8 +89,8 @@ if (resizeResponse.status != 200 && resizeResponse.status != 201) {
   throw new Error("Failed to resize the droplet");
 }
 
-await sleep(500);
-console.info("resized droplet");
+console.info("resized droplet, awaiting...");
+await sleep(1500);
 
 const powerOnResponse = await dots.droplet.powerOnDroplet({
   droplet_id: droplet.id,
