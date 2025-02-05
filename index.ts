@@ -33,7 +33,9 @@ async function waitTillActionComplete(action: IAction) {
 }
 
 const RESTING_SMOL_BOI = "s-2vcpu-4gb";
-const BIG_BOI = "s-4vcpu-16gb-amd";
+// Dedicated 8 core, 16Gb RAM machine
+// Using a shared machine with minecraft has noisy-neighbor problem
+const BIG_BOI = "c-8";
 
 const targetSizeSlug = targetSize === "big" ? BIG_BOI : RESTING_SMOL_BOI;
 
