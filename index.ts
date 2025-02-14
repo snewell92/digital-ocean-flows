@@ -1,3 +1,5 @@
+#!/usr/bin/env bun
+
 import { sleep } from "bun";
 import { createApiClient } from "dots-wrapper";
 import type { IAction } from "dots-wrapper/dist/action";
